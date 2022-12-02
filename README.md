@@ -27,40 +27,34 @@
 ##### ✅ Graficos
 
 ## Ejecución :computer:
-El módulo principal de la tarea a ejecutar es  ```menu.py```. Además se debe crear/clonar los siguientes archivos y directorios adicionales:
-directorio: Carpeta llamada ```partidas``` donde se guardaran las partidas
-archivo: ```puntajes``` donde estarán guardados los ranking.
-Por otro lado, tambien deben estar clonados los modulos ```tablero``` y ```parametros``` para que funcione correctamente todo
+Antes de ejecutar todo el jupyter notebook, primero debe descomprimir los archivos correspondientes:
+  ##### ```DivisionPoliticoAdministrativa2020.zip```
+  ##### ```superior_2022.rar```
+El jupyter notebook principal del proyercto a ejecutar es  ```entregable.ipynb```. 
 
 ## Librerías :books:
 ### Librerías externas utilizadas
-La lista de librerías externas que utilicé fue la siguiente:
+La lista de librerías externas que utilicé fueron las siguientes y todas deben ser previamente instaladas:
 
-1. ```random```: ```randint()```
-2. ```math```: ```ceil()``` 
-3. ```os```: ```modulo```
+1. ```sklearn```
+2. ```pandas```
+3. ```os```: ```path```
+4. ```geopandas```
+5. ```matplotlib```
+6. ```seaborn```
+7. ```numpy```
+8. ```warnings```
+9. ```zipfile36```
 
-### Librerías propias
-Por otro lado, los módulos que fueron creados fueron los siguientes:
+## Resumen del directorio
 
-1. ```verificaciones```: Contiene las funciones necesarias para comprobar las opciones entregadas por el usuario en el ```menu``` y ```menu_juego```.
-2. ```bestias```: Hecha para verificar las bestias y el backtracking para el flujo del juego de ```menu_juego```
-3. ```menu_juego```: Este módulo contiene el flujo del juego
-4. ```tablero``` modulo entregado para la tarea
-## Supuestos y consideraciones adicionales :thinking:
-Los supuestos que realicé durante la tarea son los siguientes:
+- los archivos que se encuentran en la parte principal del directorio son todos los necesarios para ejecutar el jupyter notebook de ```entregable.ipynb```.
 
-1. El mecanismo usado para ```guardar``` las partidas fue, en el archivo ```nombre.txt``` guardar los tableros que son una lista de lista, guardo las lineas que estan dentro de la lista mayor en el mismo formato que uno ve el tablero al ejecutar el juego. Como utilizo 2 tableros uno es el que ve el jugador y otro en el cual se hace las modificaciones, para saber que linea es de que tablero coloque un "END" para identificar que finalizo las lineas de la lista del primer tablero para asi las siguientes incluirlas en el tablero no visible.
+- Por otro lado, la carpeta ```limpieza de datos``` en esta se encuentran aquellos codigos y archivos que se usaron para previamente tener una noción de los datos para luego limpiar estos.
 
-2. El archivo de ```puntajes.txt``` esta en el formato ```nombre,puntaje```  a medida que se va agregando puntejes se va ordenando, ya que el orden lo especifico en el codigo y no es necesario que este ordenado en el archivo mismo.
+### Limpieza de datos:
 
-3. El codigo no incluye ```Programación Orientada a Objetos``` ya que no era necesario según lo especificado.
+#### ```Nem, promedios```: Esta carpeta contiene los clusters utilizados, con dos carpetas una para limpiar datos y la otra carpeta contiene los datos brutos obtenidos. Tambien contiene la documentación de todos los datos que se utilizaron.
 
-4. el archivo ```codigo tarea 0``` ```no tomar en cuenta```, contiene el codigo bruto y no esta completo 
+#### ```rendimiento```: Esta carpeta contiene los archivos brutos utilizados los cuales estan comprimidos y tambien contiene un jupyter notebook en el cual se puede visualizar y trabajar con los datos para luego limpiar estos datos y poder realizar gráficos con estos.
 
-## Referencias de código externo :book:
-
-Para realizar mi tarea saqué código de:
-
-## Descuentos
-La guía de descuentos se encuentra [link](https://github.com/IIC2233/Syllabus/blob/master/Tareas/Descuentos.md).
